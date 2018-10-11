@@ -160,7 +160,7 @@ Resources:
                     phases:
                         pre_build:
                             commands:
-                                - aws configure set region "$AWS_DEFAULT_REGION"
+                                - aws configure set region "${AWS::Region}"
                                 - make config
                         post_build:
                             commands:
